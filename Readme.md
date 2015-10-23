@@ -1,3 +1,9 @@
-## Welcome to My Repo
+# Barbarella vs. The Universe
 
-> I am your Readme.md file, you should probably update me.
+## Barbarella must overcome unusual obstacles while traveling the universe on a mission to find and stop the evil Durand-Durand!
+
+A simple in browser turn-based game. 
+
+## Tech Used:
+* Underscore.JS
+* jQuery

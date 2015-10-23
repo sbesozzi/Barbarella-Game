@@ -1,4 +1,4 @@
-export default GoodGuy;
+
 
 // GoodGuy Constructor
 let GoodGuy = function GoodGuy() {
@@ -11,3 +11,5 @@ let GoodGuy = function GoodGuy() {
   };
 
 };
+
+export default GoodGuy;

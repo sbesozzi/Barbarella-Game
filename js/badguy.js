@@ -1,4 +1,3 @@
-export default BadGuy;
 
 // BadGuy constructor
 let BadGuy = function () {
@@ -13,3 +12,4 @@ let BadGuy = function () {
 };
 
 
+export default BadGuy;
