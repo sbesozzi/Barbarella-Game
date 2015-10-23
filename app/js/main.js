@@ -86,19 +86,28 @@ ggAttack.on('click', function () {
   var num = _underscore2['default'].random(0, 25);
   budgies.hit(num);
 
+  // If bad guy health <= to 0...
   if (budgies.health <= 0) {
-    bgHealth.text('Blasted!');
+    // bgHealth.text('Blasted!');
     alert('Barbarella Wins!');
+
+    // Else bad guy health alert
   } else {
-    bgHealth.text(budgies.health);
-    alert('Killer Budgies Attacking!!');
-    barbarella.hit(10);
-    ggHealth.css('color', 'red');
-    ggHealth.text(barbarella.health);
-    setTimeout(function () {
-      ggHealth.css('color', 'purple');
-    }, 1000);
-  };
+      var bgHealth = document.getElementbyId("bgHealth");
+      bgHealth.value = barbarella.hit(20);
+      bgHealth.text(budgies.health);
+      alert('Killer Budgies Attacking!!!');
+
+      // // Good guy health show color change
+      var ggHealth = document.getElementById("ggHealth");
+      ggHealth.value = budgies.hit(5);
+
+      // ggHealth.css('color', 'red');
+      ggHealth.text(barbarella.health);
+      // setTimeout( function() {
+      //   ggHealth.css('color', 'purple');
+      // }, 1000);
+    };
 
   console.log(budgies);
 });
