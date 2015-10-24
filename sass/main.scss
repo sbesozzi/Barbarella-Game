@@ -2,7 +2,7 @@
 @import "font-awesome";
 
 body {
-  background: grey;
+  // background: grey;
 }
 
 .container {
@@ -13,11 +13,20 @@ body {
   background-repeat: none;
 }
 
+header {
+  color: white;
+
+  h2 {
+    margin: 0;
+    padding: 20px 20px;
+    text-align: center;
+  }
+}
+
 .title {
   width: 100%;
-  height: 430px;
+  height: 340px;
   text-align: center;
-
 }
 
 .character {
@@ -28,45 +37,64 @@ body {
 
 .ggImg {
   border-radius: 3px;
+  width: 20%;
+  height: auto;
 }
 
 .bgImg {
   border-radius: 3px;
 }
 
-
-
-.players {
-  margin: auto;
+.error {
   width: 100%;
-  height: 500px;
-  display: inline;
-  text-align: center;
-
+  height: 60px;
+  margin: 0;
 }
 
-.player {
-  height: 120px;
+.errorMessages {
+  height: 50px;
   width: 300px;
   margin: 0;
   background: white;
   border-radius: 3px;
-  border: 1px solid black;
-  float: left;
+  color: black;
+  text-align: center;
+}
 
+.players {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+.progress {
+    display: inline;
+}
+
+.player {
+  height: 130px;
+  width: 30%;
+  margin-top: 10px;
+  background: white;
+  border-radius: 3px;
+  
+  float: left;
 }
 
 button {
-  width: 60px;
+  width: 70px;
+  height: 30px;
   border: 0;
+  margin-top: 10px;
   outline: none;
   color: white;
   border-radius: 3px;
   decoration: none;
-
 }
 
-
-
-.healthBar {
+.healthBar[value] {
+  
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
+

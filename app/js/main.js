@@ -64,7 +64,6 @@ var _badguy2 = _interopRequireDefault(_badguy);
 
 // Good Guy Instance
 var barbarella = new _goodguy2['default']();
-
 // Bad Guy Instance
 var budgies = new _badguy2['default']();
 // let dolls = new BadGuy();
@@ -89,20 +88,23 @@ ggAttack.on('click', function () {
 
   // If bad guy health <= to 0...
   if (budgies.health <= 0) {
-    // bgHealth.text('Blasted!');
-    alert('Barbarella Wins!');
+
+    // Error Msg for budgies.health <= 0
+    (0, _jquery2['default'])(".errorMessages").text("Budgies blasted... Barbarella wins!!!").fadeIn();
 
     // Else bad guy health alert
   } else {
       var bgHealth = document.getElementById("bgHealth");
       bgHealth.value = barbarella.hit(20);
-      bgHealth.text = bgHealth.value;
-      alert('Killer Budgies Attacking!!!');
+      bgHealth.getElementsByTagName('span')[100] = budgies.health;
+
+      // Error Msg for barbarella.hit
+      (0, _jquery2['default'])(".errorMessages").text("Killer Budgies attacking!  LOOK OUT!!!").fadeIn().fadeOut(), 5000;
 
       // // Good guy health show color change
       var ggHealth = document.getElementById("ggHealth");
       ggHealth.value = budgies.hit(5);
-      ggHealth.text = barbarella.health;
+      bgHealth.getElementsByTagName("span")[100] = barbarella.health;
     };
 
   console.log(budgies);
