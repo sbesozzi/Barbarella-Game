@@ -81,6 +81,7 @@ bgHealth.text(budgies.health);
 
 // Setting up .on events
 ggAttack.on('click', function () {
+
   // Create random hit points
   // Good Guy attack!
   var num = _underscore2['default'].random(0, 25);
@@ -93,20 +94,15 @@ ggAttack.on('click', function () {
 
     // Else bad guy health alert
   } else {
-      var bgHealth = document.getElementbyId("bgHealth");
+      var bgHealth = document.getElementById("bgHealth");
       bgHealth.value = barbarella.hit(20);
-      bgHealth.text(budgies.health);
+      bgHealth.text = bgHealth.value;
       alert('Killer Budgies Attacking!!!');
 
       // // Good guy health show color change
       var ggHealth = document.getElementById("ggHealth");
       ggHealth.value = budgies.hit(5);
-
-      // ggHealth.css('color', 'red');
-      ggHealth.text(barbarella.health);
-      // setTimeout( function() {
-      //   ggHealth.css('color', 'purple');
-      // }, 1000);
+      ggHealth.text = barbarella.health;
     };
 
   console.log(budgies);

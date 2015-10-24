@@ -5,18 +5,68 @@ body {
   background: grey;
 }
 
-.players {
+.container {
+  width: auto;
+  height: 800px;;
+  background-image: url(http://wallpapercave.com/wp/vND5klG.jpg);
+  background-size: contain;
+  background-repeat: none;
+}
+
+.title {
   width: 100%;
+  height: 430px;
+  text-align: center;
+
+}
+
+.character {
+  // background-image:
   display: inline;
+  margin: 20px;
 }
 
-.goodGuy {
-  // width: 40%;
-  // height: 40px;
+.ggImg {
+  border-radius: 3px;
+}
+
+.bgImg {
+  border-radius: 3px;
+}
+
+
+
+.players {
+  margin: auto;
+  width: 100%;
+  height: 500px;
+  display: inline;
+  text-align: center;
 
 }
 
-.badGuy {
-  // width: 40%;
-  // height: 40px;
+.player {
+  height: 120px;
+  width: 300px;
+  margin: 0;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid black;
+  float: left;
+
+}
+
+button {
+  width: 60px;
+  border: 0;
+  outline: none;
+  color: white;
+  border-radius: 3px;
+  decoration: none;
+
+}
+
+
+
+.healthBar {
 }
