@@ -2055,9 +2055,10 @@ header {
   margin: 0; }
 
 .errorMessages {
-  height: 50px;
+  height: 30px;
   width: 300px;
-  margin: 0;
+  margin: auto;
+  padding-top: 15px;
   background: white;
   border-radius: 3px;
   color: black;
@@ -2065,18 +2066,18 @@ header {
 
 .players {
   width: 100%;
-  height: 500px;
-  text-align: center; }
-
-.progress {
-  display: inline; }
+  height: 150px;
+  text-align: center;
+  margin-left: 215px;
+  margin-right: 200px; }
 
 .player {
   height: 130px;
   width: 30%;
-  margin-top: 10px;
+  margin: 20px;
   background: white;
   border-radius: 3px;
+  display: inline;
   float: left; }
 
 button {
@@ -2089,8 +2090,15 @@ button {
   border-radius: 3px;
   decoration: none; }
 
-.healthBar[value] {
-  border-radius: 2px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
+progress::-webkit-progress-bar {
+  background-color: grey;
+  height: 20px;
+  width: 300px;
+  box-sizing: border-box;
+  border-radius: 1px; }
+
+progress::-webkit-progress-value {
+  background-color: #CC0000;
+  border-radius: 1px; }
 
 /*# sourceMappingURL=main.css.map */
