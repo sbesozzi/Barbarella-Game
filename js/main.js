@@ -41,7 +41,7 @@ ggAttack.on('click', function() {
     bgHealth.getElementsByTagName('span')[100] = budgies.health;
 
     // Error Msg for barbarella.hit
-    $(".errorMessages").text("Killer Budgies attacking!  LOOK OUT!!!").fadeIn().fadeOut(), 5000;
+    $(".errorMessages").text("Killer Budgies attacking!!!").fadeIn().fadeOut(), 5000;
 
     // // Good guy health show color change
     var ggHealth = document.getElementById("ggHealth");
