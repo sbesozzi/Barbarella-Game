@@ -2086,26 +2086,26 @@ header {
   display: inline;
   padding-bottom: 100%; }
 
-.ggplayer {
+.ggPlayer {
   width: 30%;
   margin-left: 15%;
   background: white;
   border-radius: 3px;
   padding-bottom: 1%;
   float: left; }
-  .ggplayer h3 {
+  .ggPlayer h3 {
     margin-bottom: 2%;
     font-size: 1em;
     color: #6E6E6E; }
 
-.bgplayer {
+.bgPlayer {
   width: 30%;
   margin-right: 15%;
   background: white;
   border-radius: 3px;
   padding-bottom: 1%;
   float: right; }
-  .bgplayer h3 {
+  .bgPlayer h3 {
     margin-bottom: 2%;
     font-size: 1em;
     color: #6E6E6E; }
