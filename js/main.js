@@ -33,6 +33,7 @@ ggAttack.on('click', function() {
 
     // Error Msg for budgies.health <= 0
     $(".errorMessages").text("Budgies blasted... Barbarella wins!!!").fadeIn();
+    
 
   // Else bad guy health alert 
   } else {
